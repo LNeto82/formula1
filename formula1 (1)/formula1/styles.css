@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registration {
+    margin-bottom: 20px;
+}
+
+#raceTrack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background: #7a7a7a;
+    margin: 0 auto;
+    border: 5px solid #333;
+}
+
+.start-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+
+.finish-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        #000,
+        #000 10px,
+        #fff 10px,
+        #fff 20px
+    );
+}
+
+.car {
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    transition: left 0.5s ease;
+}
+
+.car:nth-child(3) { top: 40%; }
+.car:nth-child(4) { top: 70%; }
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#startRace {
+    margin-top: 20px;
+}
